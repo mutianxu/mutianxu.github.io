@@ -77,34 +77,35 @@
 									<p>I completed my M.Sc. at the <a href="https://uci.edu/">University of California, Irvine</a> and my B.Eng. at <a href="https://en.xidian.edu.cn/">Xidian University</a>. 
 										I am fortunate to have worked at <a href="https://labhku.github.io/">CVMI Lab</a> under the guidance of <a href="https://xjqi.github.io/"><i>Prof. Xiaojuan Qi</a></i> and at <a href="http://mmlab.siat.ac.cn/">SIAT-MMLab</a> under the supervision of <a href="http://mmlab.siat.ac.cn/yuqiao"><i>Prof. Yu Qiao </a></i>.
 										During that time, my research focuses on <em>3D point cloud analysis</em>:
-										<br /><font size="3px">a) GDANet (AAAI 2021):  A representative work of <em>robust</em> 3D shape recognition.</font>
-										<br /><font size="3px">b) PAConv (CVPR 2021): A representative work of general point cloud representation.</font>
+										<br /><font size="3px">a) GDANet (AAAI 2021):  A representative work of <b><em>robust</em> 3D shape recognition</b>.</font>
+										<br /><font size="3px">b) PAConv (CVPR 2021): A representative work of <b><em>generic</em> point cloud representation</b>.</font>
 									</p>
 										<p>
 										Currently, I am a Ph.D. candidate at <a href="https://gaplab.cuhk.edu.cn/">GAP Lab</a>, advised by <i>Prof. Xiaoguang Han</i>, at the <a href="https://www.cuhk.edu.cn/en">Chinese University of Hong Kong (Shenzhen) </a>.
 										Throughout my Ph.D. studies, my research primarily revolved around a central question: 
-										<br /><font color="lightseagreen"><em>Can we <b style="color:lightseagreen;">simplify/eliminate</b> the painstaking job of <b style="color:lightseagreen;">real-world 3D data collection/annotation</b> to train intelligent <b style="color:lightseagreen;">algorithms/agents</b> that can <b style="color:lightseagreen;">perceive</b>, <b style="color:lightseagreen;">model</b>, <b style="color:lightseagreen;">represent</b>, and <b style="color:lightseagreen;">interact</b> with 3D <b style="color:lightseagreen;">objects/scenes</b> in the real physical world? </em></font>
-										<br />I attempt to tackle this challenge from three different perspectives:
-										<h5> (1) Data Collection <font color="orange"> => <u><em>simplify/eliminate</em></u> the real-world data collection</font></h5> 
+										<br /><font color="lightseagreen"><em>Can we <b style="color:lightseagreen;">break the barrier</b> of the painstaking <b style="color:lightseagreen;">real-world 3D data acquisition</b> to train intelligent <b style="color:lightseagreen;">algorithms/agents</b> that can <b style="color:lightseagreen;">perceive</b>, <b style="color:lightseagreen;">model</b>, <b style="color:lightseagreen;">represent</b>, and <b style="color:lightseagreen;">interact</b> with 3D <b style="color:lightseagreen;">objects/scenes</b> in the real world? </em></font>
+										<br />I attempt to tackle this challenge from two different perspectives:
+										<h5> (1) Up-stream <em>Data</em></h5>
 										<p style="font-size:16px">
-										a) TO-Scene (ECCV2022): <b>Combine synthetic data</b> with real-world data to <b>avoid</b> the scannning of real-world tabletop objects.
-										<br />b) MVImgNet (CVPR2023): Use <b>multi-view videos</b> that is <b>easier</b> to capture to represent the real 3D world.
-										<br />c) VC-Agent: Extract from <b>Internet videos</b> for customized video dataset collection.
+										<font size="4px">i)  Data Collection <font color="orange"> => <u><em>simplify/eliminate</em></u> the real-world data collection:</font></font>
+										<br />&nbsp &nbsp a) TO-Scene (ECCV2022): <b>Combine synthetic data</b> with real-world data to <b>avoid</b> the scannning of real-world tabletop objects.
+										<br />&nbsp &nbsp b) MVImgNet (CVPR2023): Use <b>multi-view videos</b> that is <b>easier to capture</b> to represent the real 3D world.
+										<br />&nbsp &nbsp c) VC-Agent: Extract from <b>Internet videos</b> for customized video dataset collection.
+										<br /><font size="4px">ii) Data Generation/Simulation <font color="orange"> => <u><em>generate/simulate</em></u> real-world 3D data:</font></font>
+										<br />&nbsp &nbsp Stable-Sim2Real: Use diffusion model to <b>generate</b> real-world 3D data captures conditioned on the input synthetic data.
 										</p>
-										<h5> (2) Downstream Algorithms <font color="orange"> => with <u><em>self/minimal</em></u> real-world supervision</font></h5> 
+										<h5> (2) Downstream <em>Algorithms</em></h5>
 										<p style="font-size:16px">
-										a) MM-3DScene (CVPR 2023): Apply masked modeling to <b>self-supervised</b> pretraining on 3D scenes.
-										<br />b) SAMPro3D (3DV 2025): Employ the 2D foundation model for zero-shot 3D scene segmentation <b>without</b> additional training.
-										</p>
-										<h5> (3) Sim2Real <font color="orange"> => <u><em>generate/simulate</em></u> real-world 3D data</font></h5> 
-										<p style="font-size:16px">
-										Stable-Sim2Real: Use diffusion model to <b>generate</b> real-world 3D data captures conditioned on the input synthetic data.
-										</p>
+										<font size="4px">i) Label-Efficient <font color="orange"> => learning <em><u>without</u></em> 3D real-world <em><u>label</u></em>:</font></font>
+										<br />&nbsp &nbsp MM-3DScene (CVPR 2023): Apply masked modeling to <b>self-supervised</b> pretraining on 3D scenes.
+										<br /><font size="4px">ii) Data-Efficient <font color="orange"> => learning <em><u>without</u></em> 3D real-world <em><u>data</u></em>:</font></font>
+										<br />&nbsp &nbsp SAMPro3D (3DV 2025): Employ the 2D foundation model for zero-shot 3D scene segmentation <b>without additional training</b>.
+								
 										<h5>I have also participated in various projects related to generative models.</h5>
 										<p style="font-size:16px">
-										a) Free-ATM (ECCV 2024): Use the diffusion model for representation learning.
-										<br />b) RichDreamer (CVPR 2024): Text-to-3D generation.
-										<br />c) Roger: Hand-object interaction video generation.
+										&nbsp &nbsp a) Free-ATM (ECCV 2024): Use the diffusion model for representation learning.
+										<br />&nbsp &nbsp b) RichDreamer (CVPR 2024): Text-to-3D generation.
+										<br />&nbsp &nbsp c) Roger: Hand-object interaction video generation.
 										</p>
 									<!-- In conclusion, My research is centered around developing intelligent algorithms and creating diverse data to comprehend, model, and represent the 3D world. Currently, I am keenly interested in embodied AI and data generation. -->
 									<p>
